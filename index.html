@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Restaurante</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>🍽️ Sistema de Restaurante</h1>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- SECCIÓN MESAS -->
+        <section class="mesas-section">
+            <h2>Mesas disponibles</h2>
+
+            <div id="mesas-container" class="mesas-grid">
+                <!-- Aquí JS va a insertar las mesas -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- MODAL (para iniciar pedido) -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Iniciar Pedido</h3>
+
+            <p>Mesa seleccionada: <span id="mesa-numero"></span></p>
+
+            <label>
+                Número de clientes:
+                <input type="number" id="num-clientes" min="1" value="1">
+            </label>
+
+            <button id="btn-iniciar">Iniciar Pedido</button>
+            <button id="btn-cerrar">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script type="module" src="/assets/js/app.js"></script>
+
+</body>
+</html>

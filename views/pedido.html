@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>🍽️ Nuevo Pedido</h1>
+        <p>Mesa: <span id="mesa-info"></span> | Clientes: <span id="clientes-info"></span></p>
+    </header>
+
+    <main class="container">
+
+    <!-- MENÚ (IZQUIERDA) -->
+    <div>
+        <section>
+            <h2>Platos principales</h2>
+            <div id="platos" class="menu-grid"></div>
+        </section>
+
+        <section>
+            <h2>Bebidas</h2>
+            <div id="bebidas" class="menu-grid"></div>
+        </section>
+
+        <section>
+            <h2>Postres</h2>
+            <div id="postres" class="menu-grid"></div>
+        </section>
+    </div>
+
+    <!-- RESUMEN (DERECHA) -->
+    <section class="resumen">
+        <h2>Resumen del pedido</h2>
+        <ul id="lista-pedido"></ul>
+
+        <p>Total: $<span id="total">0</span></p>
+
+        <button id="btn-continuar">Continuar a pago</button>
+    </section>
+
+</main>
+
+    <script type="module" src="../assets/js/modules/pedidos.js"></script>
+</body>
+</html>
